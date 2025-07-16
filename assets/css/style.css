@@ -766,12 +766,12 @@ h6 {
   padding: 5px 12px;
   border-radius: 7px;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   margin-bottom: 10px;
 }
 
 .hero__v6 .hero-title {
-  font-size: 48px;
+  font-size: 38px;
 }
 @media (max-width: 1199.98px) {
   .hero__v6 .hero-title {
