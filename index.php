@@ -98,14 +98,14 @@
             <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
               data-bs-toggle="offcanvas" data-bs-target="#fbs__net-navbars" aria-controls="fbs__net-navbars"
               aria-label="Toggle navigation" aria-expanded="false">
-              <svg class="fbs__net-icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <svg class="fbs__net-icon-menu" xmlns="https://www.w3.org/2000/svg" width="24" height="24"
                 viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <line x1="21" x2="3" y1="6" y2="6"></line>
                 <line x1="15" x2="3" y1="12" y2="12"></line>
                 <line x1="17" x2="3" y1="18" y2="18"></line>
               </svg>
-              <svg class="fbs__net-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <svg class="fbs__net-icon-close" xmlns="https://www.w3.org/2000/svg" width="24" height="24"
                 viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path d="M18 6 6 18"></path>
@@ -315,7 +315,7 @@
               <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
                 <div><span class="icon mb-4">
                     <!-- Globe icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
                       fill="currentColor">
                       <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="4" fill="none" />
                       <path d="M2,32h60M32,2c11,0 20,24 20,30s-9,30 -20,30" stroke="currentColor" stroke-width="4"
@@ -335,7 +335,7 @@
               <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
                 <div><span class="icon mb-4">
                     <!-- Document/Clipboard icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
                       fill="currentColor">
                       <rect x="16" y="8" width="32" height="48" rx="4" ry="4" stroke="currentColor" stroke-width="4"
                         fill="none" />
@@ -357,7 +357,7 @@
               <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
                 <div><span class="icon mb-4">
                     <!-- Network / Enterprise icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
                       fill="currentColor">
                       <rect x="10" y="10" width="18" height="18" stroke="currentColor" stroke-width="4" fill="none" />
                       <rect x="36" y="10" width="18" height="18" stroke="currentColor" stroke-width="4" fill="none" />
@@ -382,7 +382,7 @@
               <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
                 <div><span class="icon mb-4">
                     <!-- Magic wand / Spark icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
                       fill="currentColor">
                       <line x1="32" y1="8" x2="32" y2="56" stroke="currentColor" stroke-width="4" />
                       <line x1="8" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="4" />
@@ -402,7 +402,7 @@
                 <div>
                   <span class="icon mb-4">
                     <!-- Handshake icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
                       fill="currentColor">
                       <path d="M20 30l6 6 4-4 8 8 6-6-8-8 4-4-6-6-4 4-8-8-6 6 8 8z" stroke="currentColor"
                         stroke-width="2" fill="none" />
@@ -428,7 +428,7 @@
                 <div>
                   <span class="icon mb-4">
                     <!-- Rocket Launch icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48"
                       fill="currentColor">
                       <path d="M32 6c-5 8-4 20 4 28s20 9 28 4c-3-9-10-19-20-26S35 7 32 6z" stroke="currentColor"
                         stroke-width="2" fill="none" />

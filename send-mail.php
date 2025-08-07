@@ -1,34 +1,45 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
     $name    = htmlspecialchars($_POST["name"]);
     $email   = htmlspecialchars($_POST["email"]);
     $subject = htmlspecialchars($_POST["subject"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    // Receiver email address
-    $to = "your-email@example.com"; // replace with your actual email
+    $mail = new PHPMailer(true);
 
-    // Email subject
-    $email_subject = "New Contact Form Message: " . $subject;
+    try {
+        // SMTP Configuration
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'sales@vynteqglobal.com';         // your Gmail address
+        $mail->Password   = 'yojd qhej locs mktf';         // the 16-character app password
+        $mail->SMTPSecure = 'tls';                            // use 'ssl' for port 465
+        $mail->Port       = 587;
 
-    // Email body
-    $email_body = "You have received a new message from the contact form:\n\n" .
-                  "Name: $name\n" .
-                  "Email: $email\n" .
-                  "Subject: $subject\n" .
-                  "Message:\n$message";
+        // Email Content
+        $mail->setFrom('sales@vynteqglobal.com', 'Contact Form');
+        $mail->addAddress('sales@vynteqglobal.com');          // send to yourself or any email
+        $mail->addReplyTo($email, $name);
 
-    // Email headers
-    $headers = "From: $email\r\n" .
-               "Reply-To: $email\r\n" .
-               "X-Mailer: PHP/" . phpversion();
+        $mail->Subject = "New Contact Form Message: " . $subject;
+        $mail->Body    = "You have received a new message from the contact form:\n\n" .
+                         "Name: $name\n" .
+                         "Email: $email\n" .
+                         "Subject: $subject\n" .
+                         "Message:\n$message";
 
-    // Try to send the email
-    if (mail($to, $email_subject, $email_body, $headers)) {
+        $mail->send();
         echo "success";
-    } else {
-        echo "error";
+    } catch (Exception $e) {
+        echo "error: {$mail->ErrorInfo}";
     }
 }
 ?>
